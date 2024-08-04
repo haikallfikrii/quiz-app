@@ -2,12 +2,12 @@ import React from "react";
 
 const Result = ({ score, totalQuestions }) => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="bg-white p-8 rounded shadow-md w-full max-w-sm text-center">
-        <h1 className="text-2xl font-bold mb-6">Quiz Result</h1>
-        <p className="mb-2">Total Questions: {totalQuestions}</p>
-        <p className="mb-2">Correct Answers: {score}</p>
-        <p className="mb-2">Wrong Answers: {totalQuestions - score}</p>
+    <div className="flex items-center justify-center w-screen min-h-screen bg-gradient-to-r from-green-400 to-blue-500">
+      <div className="w-full max-w-md p-8 text-center glassmorphism">
+        <h1 className="mb-6 text-3xl font-bold text-gray-800">Quiz Result</h1>
+        <p className="mb-4 text-lg">Total Questions: {totalQuestions}</p>
+        <p className="mb-4 text-lg">Correct Answers: {score}</p>
+        <p className="mb-4 text-lg">Wrong Answers: {totalQuestions - score}</p>
       </div>
     </div>
   );

@@ -1,16 +1,14 @@
-// src/components/Login.js
+// src/components/LoginForm.js
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import "./Login.css";
+import "./LoginForm.css";
 
-const Login = () => {
+const LoginForm = () => {
   const [name, setName] = useState("");
-  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Redirect to quiz page
-    navigate("/quiz");
+    // Lakukan sesuatu dengan nama yang diinput, misalnya menyimpan ke state atau mengirim ke server
+    console.log("Nama:", name);
   };
 
   return (
@@ -35,4 +33,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginForm;

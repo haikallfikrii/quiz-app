@@ -6,8 +6,10 @@ const Question = ({ question, onAnswer }) => {
   };
 
   return (
-    <div className="p-4 bg-white shadow-md rounded-md">
-      <h2 className="text-xl font-bold mb-4">{question.question}</h2>
+    <div className="p-6 bg-white rounded-lg shadow-lg">
+      <h2 className="mb-4 text-2xl font-bold text-gray-800">
+        {question.question}
+      </h2>
       <div className="space-y-2">
         {question.incorrect_answers
           .concat(question.correct_answer)
@@ -16,7 +18,7 @@ const Question = ({ question, onAnswer }) => {
             <button
               key={index}
               onClick={() => handleAnswerClick(answer)}
-              className="w-full bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
+              className="w-full px-4 py-2 font-semibold text-gray-800 transition duration-200 bg-gray-200 rounded-md hover:bg-gray-300"
             >
               {answer}
             </button>

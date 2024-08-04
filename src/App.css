@@ -1,3 +1,22 @@
+/* src/App.css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +54,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.glassmorphism {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Mengatur warna latar belakang putih dengan transparansi */
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
